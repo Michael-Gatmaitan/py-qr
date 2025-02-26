@@ -90,8 +90,7 @@ CSV_FILE = "inventory_scan.csv"
 def save_to_csv(item_code, item_name):
     quantity = input(f"Enter quantity for {item_name} ({item_code}): ")
 
-    data = {"Item Code": [item_code], "Item Name": [
-        item_name], "Quantity": [quantity]}
+    data = {"Item Code": [item_code], "Item Name": [item_name], "Quantity": [quantity]}
 
     df = pd.DataFrame(data)
 
@@ -124,8 +123,8 @@ def test_qr_camera():
 
 
 # TODO: test the scanning of qrcode: CAMERA
-item_code, item_name = test_qr_camera()
-save_to_csv(item_code, item_name)
+# item_code, item_name = test_qr_camera()
+# save_to_csv(item_code, item_name)
 
 # TODO: test the scanning of qrcode: FILE
 # item_code, item_name = test_qr_path("MichaelGatmaitan.png")
